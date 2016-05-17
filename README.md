@@ -9,9 +9,9 @@ Also try this https://github.com/asdil12/mifare-view-dump
 
 Included ```dump.mfd``` -- Mifare 4k dump for testing.  
 #### Usage:
-```mfdread.py ./dump.mfd```
+```./mfdread.py ./docs/dump.mfd```
 
-![Mifare mfd dump parser](https://zhovner.com/forever/mfdread.png)
+![Mifare mfd dump parser](docs/mfdreadExample.jpg)
 
 The total memory of 1024 bytes in Mifare Classic (1k) and 4096 bytes in Mifare 4k is divided into 16 sectors of 64 bytes, each of the sectors is divided into 4 blocks of 16 bytes. Blocks 0, 1 and 2 of each sector can store data and block 3 is used to store keys and access bits (the exception is the ‘Manufacturer Block’ which can not store data).
 ![Mifare memory structure](https://zhovner.com/forever/MiFare_Memory_Structure.png)
